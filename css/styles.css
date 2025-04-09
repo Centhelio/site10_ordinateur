@@ -43,6 +43,8 @@ a{
     font-size: 1.8rem;
 
     margin: 0;
+
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
 
 p{
@@ -72,7 +74,7 @@ h2{
     color: #474747;
 }
 
-h3{
+h3, span{
     font-size: 2.2rem;
     font-weight: 700;
     line-height: 25px;
@@ -83,6 +85,8 @@ h3{
    Component
 ------------------------------------------------------------------------------*/
 
+
+/* HEADER */    
 header{
     
     background-color: white;
@@ -98,6 +102,12 @@ header a{
     color: #474747;
 }
 
+a:hover{
+    color: #474747;
+    border-bottom: 2px solid #474747;
+    transition: border 0.2s ease-in;
+}
+
 header nav{
     height: 70px;
     display: flex;
@@ -108,4 +118,164 @@ header nav{
 header .logo{
     font-size: 4.2rem;
     
+}
+
+/* HERO */    
+.hero{
+    background-image: url(../images/hero_background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+.hero .wrapper{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero .hero-box{
+    padding: 30px;
+    background-color: #e25254d6;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hero p{
+    color: white;
+}
+
+.hero h1{
+    padding: 25px 0 25px 0;
+}
+
+.hero a{
+    background-color: #C0392B;
+    color: white;
+    padding: 6px 20px 6px 20px;
+    margin-top: 25px;
+    display: inline-flex;
+}
+
+
+.produits{
+    padding: 75px 0 75px 0;
+}
+
+.produits .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 35px;
+    padding: 15px 0 15px 0;
+}
+
+.produits .card{
+    background-color: white;
+    padding: 30px;  
+    color: #E25254; 
+}
+
+.produits .card p{
+    padding: 25px 0 50px 0;
+    color: #474747;
+}
+
+.card .card-title{
+    display: flex;
+    align-items: center;
+}
+
+.produits .card:hover{
+    background-color: #E25254;
+    color: #ffffff
+}
+
+.conseils{
+    background-image: url(../images/tile.png);
+    background-position: center;
+    background-repeat: repeat-x repeat-y;
+
+    background-color: #E25254;
+    padding: 80px 0 80px 0;
+}
+
+.conseils h2, .conseils p{
+    color: white;
+}
+
+.conseils .contenu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding-top: 40px;
+}
+
+.conseils .contenu .card{
+    background-color: white;
+    padding: 35px;
+}
+
+.conseils .card p{
+    color: black;
+    padding: 20px 0 20px 40px;
+}
+
+.conseils .card span{
+    color: #474747;
+    font-size: 2.8rem;
+}
+
+.conseils .card a{
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+footer{
+    background-color: #E25254;
+    color: white;
+}
+
+footer .wrapper{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.visible{
+    background-color: #474747;
+    width: 100%;
+}
+
+.modale{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 200;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 40rem;
+    font-weight: 700;
+    color: #C0392B;
+}
+
+.modale.visible{
+    display: flex;
 }
