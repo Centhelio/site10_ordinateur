@@ -27,18 +27,18 @@ body {
     background-color: #ECF0F1;
 }
 
-ul{
+ul {
     margin: 0;
     padding: 0;
 }
 
-.wrapper{
+.wrapper {
     max-width: 1200px;
     margin: 0 auto;
 }
 
 
-a{
+a {
     text-decoration: none;
     font-size: 1.8rem;
 
@@ -47,19 +47,22 @@ a{
     border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
 
-p{
+p {
     font-size: 1.8rem;
 
     margin: 0;
 }
 
-h1, h2, h3, .logo{
+h1,
+h2,
+h3,
+.logo {
     font-family: "Josefin Sans", sans-serif;
 
     margin: 0;
 }
 
-h1{
+h1 {
     font-size: 4.8rem;
     font-weight: 700;
     line-height: 55px;
@@ -67,14 +70,15 @@ h1{
     color: white;
 }
 
-h2{
+h2 {
     font-size: 3.6rem;
     font-weight: 700;
     line-height: 41px;
     color: #474747;
 }
 
-h3, span{
+h3,
+span {
     font-size: 2.2rem;
     font-weight: 700;
     line-height: 25px;
@@ -86,56 +90,56 @@ h3, span{
 ------------------------------------------------------------------------------*/
 
 
-/* HEADER */    
-header{
-    
+/* HEADER */
+header {
+
     background-color: white;
 }
 
-header ul{
+header ul {
     display: flex;
     list-style: none;
 }
 
-header a{
+header a {
     padding: 0 5px 0 5px;
     color: #474747;
 }
 
-a:hover{
+a:hover {
     color: #474747;
     border-bottom: 2px solid #474747;
     transition: border 0.2s ease-in;
 }
 
-header nav{
+header nav {
     height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .logo{
+header .logo {
     font-size: 4.2rem;
-    
+
 }
 
-/* HERO */    
-.hero{
+/* HERO */
+.hero {
     background-image: url(../images/hero_background.jpg);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
 }
 
-.hero .wrapper{
+.hero .wrapper {
     height: 600px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.hero .hero-box{
+.hero .hero-box {
     padding: 30px;
     background-color: #e25254d6;
     width: 600px;
@@ -144,15 +148,15 @@ header .logo{
     align-items: flex-end;
 }
 
-.hero p{
+.hero p {
     color: white;
 }
 
-.hero h1{
+.hero h1 {
     padding: 25px 0 25px 0;
 }
 
-.hero a{
+.hero a {
     background-color: #C0392B;
     color: white;
     padding: 6px 20px 6px 20px;
@@ -161,39 +165,45 @@ header .logo{
 }
 
 
-.produits{
+.produits {
     padding: 75px 0 75px 0;
 }
 
-.produits .row{
+.produits .row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 35px;
     padding: 15px 0 15px 0;
 }
 
-.produits .card{
+.produits .card {
     background-color: white;
-    padding: 30px;  
-    color: #E25254; 
+    padding: 30px;
+    color: #E25254;
 }
 
-.produits .card p{
+.produits .card p {
     padding: 25px 0 50px 0;
     color: #474747;
 }
 
-.card .card-title{
+.card .card-title {
     display: flex;
     align-items: center;
 }
 
-.produits .card:hover{
+.produits .card:hover {
     background-color: #E25254;
-    color: #ffffff
 }
 
-.conseils{
+
+.produits .card:hover h3,
+.produits .card:hover span,
+.produits .card:hover p {
+  color: #ffffff;
+}
+
+.conseils {
     background-image: url(../images/tile.png);
     background-position: center;
     background-repeat: repeat-x repeat-y;
@@ -202,33 +212,34 @@ header .logo{
     padding: 80px 0 80px 0;
 }
 
-.conseils h2, .conseils p{
+.conseils h2,
+.conseils p {
     color: white;
 }
 
-.conseils .contenu{
+.conseils .contenu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
     padding-top: 40px;
 }
 
-.conseils .contenu .card{
+.conseils .contenu .card {
     background-color: white;
     padding: 35px;
 }
 
-.conseils .card p{
+.conseils .card p {
     color: black;
     padding: 20px 0 20px 40px;
 }
 
-.conseils .card span{
+.conseils .card span {
     color: #474747;
     font-size: 2.8rem;
 }
 
-.conseils .card a{
+.conseils .card a {
     display: flex;
     justify-content: flex-end;
     color: black;
@@ -236,12 +247,12 @@ header .logo{
     margin-top: 20px;
 }
 
-footer{
+footer {
     background-color: #E25254;
     color: white;
 }
 
-footer .wrapper{
+footer .wrapper {
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -250,12 +261,12 @@ footer .wrapper{
 
 
 
-.visible{
+.visible {
     background-color: #474747;
     width: 100%;
 }
 
-.modale{
+.modale {
     position: fixed;
     top: 0;
     left: 0;
@@ -276,6 +287,6 @@ footer .wrapper{
     color: #C0392B;
 }
 
-.modale.visible{
+.modale.visible {
     display: flex;
 }
