@@ -92,7 +92,7 @@ span {
 
 /* HEADER */
 header {
-
+    border-top: solid 4px #E25254;
     background-color: white;
 }
 
